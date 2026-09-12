@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Entregable1DAM</string>
+    <string name="app_display_name">ITANES Tour</string>
+    <string name="route_title">Ruta Cusco y Valle Sagrado</string>
+    <string name="route_subtitle">5 puntos turisticos con datos offline, fotos, favoritos y rutas en auto.</string>
+    <string name="favorites">Favoritos</string>
+    <string name="sync">Actualizar</string>
+    <string name="open_route">Ruta</string>
+    <string name="save">Guardar</string>
+    <string name="saved">Guardado</string>
+    <string name="share">Compartir</string>
+    <string name="offline_ready">Disponible sin conexion</string>
+    <string name="online_ready">Conexion detectada: puedes actualizar datos.</string>
+    <string name="offline_mode">Sin conexion: usando base local SQLite.</string>
+    <string name="api_syncing">Consultando la API de Wikipedia...</string>
+    <string name="api_updated">Wikipedia: %1$d puntos actualizados.</string>
+    <string name="api_error">No se pudo consultar la API. Se mantienen los datos locales.</string>
+    <string name="empty_favorites">Aun no hay favoritos guardados.</string>
+    <string name="photo_credits">Creditos de fotografias</string>
+    <string name="photo_credits_hint">Selecciona una fotografia para ver su fuente en Wikimedia Commons.</string>
+    <string name="close">Cerrar</string>
+
+    <string-array name="photo_credit_labels">
+        <item>Plaza de Armas - Yanela Sharumi Ccalluco Vargas - CC BY-SA 4.0</item>
+        <item>Qorikancha - Johan de la Vega A. - CC BY-SA 4.0</item>
+        <item>Sacsayhuaman - Diego Delso - CC BY-SA 4.0</item>
+        <item>Pisac - Ricardo Sanchez - CC BY 2.0</item>
+        <item>Ollantaytambo - Eric Hossinger - CC BY 2.0</item>
+    </string-array>
+
+    <string-array name="photo_credit_urls" translatable="false">
+        <item>https://commons.wikimedia.org/wiki/File:Plaza_de_Armas_Cusco.jpg</item>
+        <item>https://commons.wikimedia.org/wiki/File:El_Templo_de_Coricancha_(o_Koricancha).jpg</item>
+        <item>https://commons.wikimedia.org/wiki/File:Sacsayhuam%C3%A1n,_Cusco,_Per%C3%BA,_2015-07-31,_DD_05.JPG</item>
+        <item>https://commons.wikimedia.org/wiki/File:Pisac_terraces.jpg</item>
+        <item>https://commons.wikimedia.org/wiki/File:View_of_Ollantaytambo_town_and_ruins.jpg</item>
+    </string-array>
+</resources>

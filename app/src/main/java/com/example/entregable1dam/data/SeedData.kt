@@ -1,0 +1,86 @@
+package com.example.entregable1dam.data
+
+object SeedData {
+    val tourPoints = listOf(
+        TourPoint(
+            id = "cusco_plaza",
+            routeOrder = 1,
+            name = "Plaza de Armas de Cusco",
+            city = "Cusco",
+            description = "Punto de inicio del recorrido. Reune portales coloniales, templos historicos y acceso rapido a servicios turisticos del centro.",
+            address = "Plaza de Armas, Cusco",
+            latitude = -13.516421,
+            longitude = -71.978539,
+            imageName = "photo_cusco_plaza",
+            estimatedDrive = "20 min desde el aeropuerto",
+            schedule = "Libre todo el dia",
+            price = "Ingreso libre",
+            tips = "Ideal para iniciar temprano, cambiar dinero y coordinar el punto de encuentro del grupo.",
+            updatedAt = "local-seed"
+        ),
+        TourPoint(
+            id = "qorikancha",
+            routeOrder = 2,
+            name = "Qorikancha",
+            city = "Cusco",
+            description = "Antiguo templo inca del Sol integrado al Convento de Santo Domingo. Permite explicar la arquitectura inca y colonial en un mismo punto.",
+            address = "Santo Domingo s/n, Cusco",
+            latitude = -13.520024,
+            longitude = -71.97505,
+            imageName = "photo_qorikancha",
+            estimatedDrive = "5 min desde Plaza de Armas",
+            schedule = "08:30 - 17:30",
+            price = "Referencia: S/ 15",
+            tips = "Comprar entrada con anticipacion en temporada alta y llevar documento de identidad.",
+            updatedAt = "local-seed"
+        ),
+        TourPoint(
+            id = "sacsayhuaman",
+            routeOrder = 3,
+            name = "Sacsayhuaman",
+            city = "Cusco",
+            description = "Complejo arqueologico famoso por sus muros de piedra y vista panoramica de la ciudad. Es clave para un circuito cultural corto.",
+            address = "Carretera a Sacsayhuaman, Cusco",
+            latitude = -13.507903,
+            longitude = -71.982381,
+            imageName = "photo_sacsayhuaman",
+            estimatedDrive = "12 min desde Qorikancha",
+            schedule = "07:00 - 17:30",
+            price = "Incluido en boleto turistico",
+            tips = "Llevar bloqueador, agua y abrigo ligero por el viento de la zona alta.",
+            updatedAt = "local-seed"
+        ),
+        TourPoint(
+            id = "pisac",
+            routeOrder = 4,
+            name = "Pisac",
+            city = "Valle Sagrado",
+            description = "Pueblo y zona arqueologica con andenes, miradores y mercado artesanal. Funciona como parada intermedia hacia el Valle Sagrado.",
+            address = "Pisac, Calca",
+            latitude = -13.421884,
+            longitude = -71.850349,
+            imageName = "photo_pisac",
+            estimatedDrive = "55 min desde Sacsayhuaman",
+            schedule = "07:00 - 17:30",
+            price = "Incluido en boleto turistico",
+            tips = "Reservar tiempo para el mercado y confirmar punto de reunion despues de la visita guiada.",
+            updatedAt = "local-seed"
+        ),
+        TourPoint(
+            id = "ollantaytambo",
+            routeOrder = 5,
+            name = "Ollantaytambo",
+            city = "Valle Sagrado",
+            description = "Centro arqueologico y pueblo vivo del Valle Sagrado. Cierra el recorrido con terrazas, calles incas y conexion hacia trenes turisticos.",
+            address = "Ollantaytambo, Urubamba",
+            latitude = -13.258333,
+            longitude = -72.263889,
+            imageName = "photo_ollantaytambo",
+            estimatedDrive = "1 h 25 min desde Pisac",
+            schedule = "07:00 - 17:30",
+            price = "Incluido en boleto turistico",
+            tips = "Usar calzado comodo y considerar retorno antes de la noche por la carretera del valle.",
+            updatedAt = "local-seed"
+        )
+    )
+}

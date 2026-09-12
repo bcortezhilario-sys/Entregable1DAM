@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="itanes_primary">#006C67</color>
+    <color name="itanes_primary_dark">#004D49</color>
+    <color name="itanes_accent">#F2A900</color>
+    <color name="itanes_bg">#F5F7F6</color>
+    <color name="itanes_surface">#FFFFFF</color>
+    <color name="itanes_surface_alt">#E8F3F1</color>
+    <color name="itanes_text">#183331</color>
+    <color name="itanes_muted">#647571</color>
+    <color name="itanes_success">#1B8A5A</color>
+    <color name="itanes_warning">#A45D00</color>
+</resources>

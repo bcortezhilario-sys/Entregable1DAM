@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardPoint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="14dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/itanes_surface"
+    app:cardCornerRadius="@dimen/card_radius"
+    app:cardElevation="1dp"
+    app:strokeColor="#D9E7E4"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imagePlace"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tour_image_height"
+            android:contentDescription="@string/route_title"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/photo_cusco_plaza" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textItemTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/itanes_text"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Plaza de Armas de Cusco" />
+
+            <TextView
+                android:id="@+id/textItemCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/itanes_primary"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:text="Cusco" />
+
+            <TextView
+                android:id="@+id/textItemDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:lineSpacingExtra="2dp"
+                android:maxLines="3"
+                android:textColor="@color/itanes_muted"
+                android:textSize="14sp"
+                tools:text="Centro historico ideal para iniciar el recorrido guiado." />
+
+            <TextView
+                android:id="@+id/textItemMeta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/itanes_text"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                tools:text="Auto: 8 min desde el hotel" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonItemFavorite"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:minWidth="0dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/save"
+                    android:textSize="12sp"
+                    app:iconPadding="4dp"
+                    app:icon="@drawable/ic_favorite_border_24" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonItemRoute"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:minWidth="0dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/open_route"
+                    android:textSize="12sp"
+                    app:iconPadding="4dp"
+                    app:icon="@drawable/ic_map_24" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonItemOpen"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:contentDescription="Ver detalle"
+                    app:backgroundTint="@color/itanes_surface_alt"
+                    app:icon="@drawable/ic_arrow_forward_24"
+                    app:iconPadding="0dp"
+                    app:iconTint="@color/itanes_primary" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

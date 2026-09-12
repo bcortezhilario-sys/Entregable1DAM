@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Entregable1DAM" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/itanes_primary</item>
+        <item name="colorPrimaryDark">@color/itanes_primary_dark</item>
+        <item name="colorAccent">@color/itanes_accent</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:navigationBarColor">@color/itanes_bg</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/itanes_bg</item>
+    </style>
+
+    <style name="Theme.Entregable1DAM" parent="Base.Theme.Entregable1DAM" />
+</resources>

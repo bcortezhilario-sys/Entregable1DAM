@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/itanes_bg"
+    android:fillViewport="true"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_header"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/screen_padding"
+            android:paddingTop="24dp"
+            android:paddingEnd="@dimen/screen_padding"
+            android:paddingBottom="18dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="Volver"
+                app:backgroundTint="#22000000"
+                app:icon="@drawable/ic_arrow_back_24"
+                app:iconPadding="0dp"
+                app:iconTint="@color/white" />
+
+            <TextView
+                android:id="@+id/textDetailHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Detalle del punto" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageDetail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/detail_image_height"
+            android:contentDescription="@string/route_title"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/photo_qorikancha" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/screen_padding"
+            android:paddingTop="22dp"
+            android:paddingEnd="@dimen/screen_padding"
+            android:paddingBottom="30dp">
+
+            <TextView
+                android:id="@+id/textDetailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/itanes_text"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                tools:text="Qorikancha" />
+
+            <TextView
+                android:id="@+id/textDetailCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/itanes_primary"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:text="Cusco" />
+
+            <TextView
+                android:id="@+id/textDetailDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="4dp"
+                android:textColor="@color/itanes_text"
+                android:textSize="16sp"
+                tools:text="Descripcion completa del punto turistico." />
+
+            <TextView
+                android:id="@+id/textDetailInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_status_chip"
+                android:lineSpacingExtra="3dp"
+                android:textColor="@color/itanes_primary_dark"
+                android:textSize="14sp"
+                tools:text="Horario: 08:00 - 17:00\nIngreso: S/ 15\nAuto: 10 min" />
+
+            <TextView
+                android:id="@+id/textDetailTips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="3dp"
+                android:textColor="@color/itanes_muted"
+                android:textSize="15sp"
+                tools:text="Tip: llevar agua y abrigo ligero." />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonDetailRoute"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_route"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/itanes_primary"
+                    app:icon="@drawable/ic_map_24"
+                    app:iconTint="@color/white" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonDetailFavorite"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/save"
+                    app:icon="@drawable/ic_favorite_border_24" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonDetailShare"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/share"
+                    app:icon="@drawable/ic_share_24" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

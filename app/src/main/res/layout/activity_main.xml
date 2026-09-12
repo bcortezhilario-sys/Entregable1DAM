@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/itanes_bg"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_header"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/screen_padding"
+            android:paddingTop="28dp"
+            android:paddingEnd="@dimen/screen_padding"
+            android:paddingBottom="28dp">
+
+            <TextView
+                android:id="@+id/textAppName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_display_name"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textRouteTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/route_title"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textRouteSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="3dp"
+                android:text="@string/route_subtitle"
+                android:textColor="#DDEDEA"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonFavorites"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/favorites"
+                    android:textColor="@color/white"
+                    app:icon="@drawable/ic_favorite_border_24"
+                    app:iconTint="@color/white"
+                    app:strokeColor="@color/white" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonSync"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sync"
+                    app:backgroundTint="@color/itanes_accent"
+                    app:icon="@drawable/ic_refresh_24"
+                    app:iconTint="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/screen_padding"
+            android:paddingTop="18dp"
+            android:paddingEnd="@dimen/screen_padding"
+            android:paddingBottom="28dp">
+
+            <TextView
+                android:id="@+id/textNetworkStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_status_chip"
+                android:text="@string/offline_ready"
+                android:textColor="@color/itanes_primary_dark"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textRouteSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:textColor="@color/itanes_text"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="5 puntos del recorrido" />
+
+            <LinearLayout
+                android:id="@+id/containerPoints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonPhotoCredits"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dp"
+                android:text="@string/photo_credits"
+                android:textColor="@color/itanes_primary"
+                app:icon="@drawable/ic_info_24"
+                app:iconTint="@color/itanes_primary" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
